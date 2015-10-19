@@ -1,7 +1,9 @@
 library(ggplot2)
 library(qualityTools)
-#set.seed(50)
 
+#make set.seed(50) at the beginning to make sure result are same as others
+
+set.seed(50)
 rsample <- function(typ, lam=1, rep=1, exp.max=0, poi.max=1, gam.alpha=1){ 
   # parameter:
   #   typ: the type of distribution, c("exp", "poi", "gam")
@@ -63,11 +65,13 @@ rexp.max <- function(max, lam){
   return(ret)
 }
 
+#Comment, he set up it by using density, so the result will be 100 time less than mine
 
 dat <- rsample("exp", rep=1000, lam=2)
 dat <- rsample("exp", rep=1000, lam=2, exp.max=10)
 dat <- rsample("poi", rep=1000, lam=2, poi.max=3)
 dat <- rsample("gam", rep=1000, lam=2, gam.alpha=4)
 
+#otherwise! it is a prefect code! XD
 
 
