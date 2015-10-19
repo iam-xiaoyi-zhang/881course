@@ -71,7 +71,7 @@ for(i in c(1:length(line))){
 }
 length(stormline)
 cdf <-ecdf(stormline)
-densityPlot(stormline)
+#densityPlot(stormline)
 
 
 # Estimation
