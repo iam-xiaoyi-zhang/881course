@@ -1,0 +1,5 @@
+the chsi running order:
+chsi_read.R
+chsi_clean.R
+chsi_plot.R
+chsi.cluster.R
